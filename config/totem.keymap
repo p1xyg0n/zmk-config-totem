@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none    &none      &none     &none      &none       &kp RBRC  &kp KP_N7       &kp UP_ARROW    &kp KP_N9      &kp KP_PLUS
-        &trans   &trans     &trans    &trans     &kp LBKT    &kp RBKT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp KP_MINUS
-&trans  &kp DEL  &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END       &trans
-                            &trans    &trans     &trans      &mo ADJ   &kp KP_N0       &trans
+        &none    &none      &none     &none      &none       &kp LC(Z)        &kp LC(X)       &kp LC(C)       &kp LC(V)      &kp LC(Y)
+        &trans   &trans     &trans    &trans     &kp LBKT    &kp PRINTSCREEN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp KP_MINUS
+&trans  &kp DEL  &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp CAPSLOCK     &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END       &trans
+                            &trans    &none      &trans      &trans           &trans          &trans
             >;
         };
 
