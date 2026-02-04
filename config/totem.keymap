@@ -29,11 +29,6 @@
     tapping-term-ms = <190>;
 };
 
-&lt {
-    quick-tap-ms = <175>;
-    tapping-term-ms = <190>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -116,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &trans
+        &none    &none      &none     &none      &none       &kp RBRC  &kp KP_N7       &kp UP_ARROW    &kp KP_N9      &kp KP_PLUS
+        &trans   &trans     &trans    &trans     &kp LBKT    &kp RBKT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp KP_MINUS
+&trans  &kp DEL  &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END       &trans
+                            &trans    &trans     &trans      &mo ADJ   &kp KP_N0       &trans
             >;
         };
 
