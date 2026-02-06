@@ -40,8 +40,8 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            bindings = <&kp LC(ENTER)>;
         };
     };
 
@@ -84,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y    &kp U            &kp I        &kp O       &kp P
-                  &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G      &kp H    &mt RCTRL J      &mt RSHFT K  &mt RALT L  &mt RGUI SEMICOLON
-&kp LC(LG(LEFT))  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N    &kp M            &kp COMMA    &kp DOT     &kp FSLH            &kp SQT
-                                          &kp ESCAPE   &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BACKSPACE  &kp DELETE
+                  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U            &kp I        &kp O       &kp P
+                  &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J      &mt RSHFT K  &mt RALT L  &mt RGUI SEMICOLON
+&kp LC(LG(LEFT))  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M            &kp COMMA    &kp DOT     &kp FSLH            &kp SQT
+                                          &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &kp RET  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -111,7 +111,7 @@
 
             bindings = <
                  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &kp CAPSLOCK  &none           &kp UP_ARROW    &none          &none
-                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &none        &kp F5        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none
+                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &kp F5        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none
 &kp PRINTSCREEN  &none      &none         &none      &none      &none        &none         &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END  &trans
                                           &trans     &none      &trans       &trans        &trans          &trans
             >;
@@ -166,6 +166,15 @@
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        sd_layer {
+            bindings = <
+        &trans  &trans  &kp LC(UP_ARROW)  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp LC(DOWN)      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans            &trans  &trans    &trans  &trans  &trans
             >;
         };
 
