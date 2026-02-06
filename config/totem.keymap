@@ -116,9 +116,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &none   &none           &kp UP_ARROW    &none          &none
-                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none
-&kp PRINTSCREEN  &none      &none         &kp F5     &none      &none        &none   &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END  &trans
+                 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &none   &none           &kp UP_ARROW    &none            &none
+                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp PRINTSCREEN  &none      &none         &kp F5     &none      &none        &none   &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN    &kp END  &trans
                                           &trans     &none      &trans       &trans  &trans          &trans
             >;
         };
@@ -177,10 +177,10 @@
 
         sd_layer {
             bindings = <
-        &trans  &trans  &kp LC(UP_ARROW)  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &kp LC(DOWN)      &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans            &trans  &trans    &trans  &trans  &trans
+        &trans  &trans          &kp LC(UP_ARROW)  &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans            &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans            &trans           &trans    &trans  &trans  &trans
             >;
         };
 
