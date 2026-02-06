@@ -40,8 +40,14 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp LC(ENTER)>;
+        };
+
+        combo_caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
         };
     };
 
@@ -110,10 +116,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &kp CAPSLOCK  &none           &kp UP_ARROW    &none          &none
-                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &kp F5        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none
-&kp PRINTSCREEN  &none      &none         &none      &none      &none        &none         &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END  &trans
-                                          &trans     &none      &trans       &trans        &trans          &trans
+                 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &none   &none           &kp UP_ARROW    &none          &none
+                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none
+&kp PRINTSCREEN  &none      &none         &kp F5     &none      &none        &none   &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN  &kp END  &trans
+                                          &trans     &none      &trans       &trans  &trans          &trans
             >;
         };
 
