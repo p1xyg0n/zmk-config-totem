@@ -39,15 +39,15 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <15>;
             key-positions = <2 3>;
-            bindings = <&kp LC(ENTER)>;
+            bindings = <&kp ENTER>;
         };
 
         combo_caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <0 1>;
-            timeout-ms = <50>;
+            timeout-ms = <15>;
         };
     };
 
@@ -177,7 +177,7 @@
 
         sd_layer {
             bindings = <
-        &trans  &trans          &kp LC(UP_ARROW)  &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans          &kp LC(UP_ARROW)  &kp LC(ENTER)    &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans            &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans            &trans           &trans    &trans  &trans  &trans
