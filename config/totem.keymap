@@ -177,10 +177,10 @@
 
         sd_layer {
             bindings = <
-                  &trans         &trans          &kp LC(UP_ARROW)  &kp LC(ENTER)    &trans    &trans  &trans  &trans  &trans  &trans
-                  &kp BACKSPACE  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans
-&kp LC(LG(LEFT))  &trans         &trans          &trans            &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans            &trans           &trans    &trans  &trans  &trans
+                        &trans         &trans          &kp LC(UP_ARROW)  &kp LC(ENTER)    &trans    &trans  &trans  &trans  &trans  &trans
+                        &kp BACKSPACE  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LC(LG(LEFT_ARROW))  &trans         &trans          &trans            &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                       &trans            &trans           &trans    &trans  &trans  &trans
             >;
         };
 
