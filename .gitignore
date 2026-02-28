@@ -1,0 +1,9 @@
+
+# West workspace (never commit)
+.west/
+zmk/
+zephyr/
+modules/
+tools/
+bootloader/
+build/
