@@ -35,21 +35,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <15>;
-            key-positions = <2 3>;
-            bindings = <&kp ENTER>;
-        };
-
-        combo_caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <0 1>;
-            timeout-ms = <15>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         gif: gif {
@@ -116,10 +102,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)  &kp LC(Y)    &none   &none           &kp UP_ARROW    &none            &none
-                 &kp LGUI   &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp PRINTSCREEN  &none      &none         &kp F5     &none      &none        &none   &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN    &kp END  &trans
-                                          &trans     &none      &trans       &trans  &trans          &trans
+                 &none     &none         &none      &kp F5     &kp CAPS     &none   &none           &kp UP_ARROW    &none            &none
+                 &kp LGUI  &kp LEFT_ALT  &kp LSHFT  &kp LCTRL  &kp LC(F)    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp PRINTSCREEN  &none     &none         &none      &none      &kp ENTER    &none   &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN    &kp END  &trans
+                                         &trans     &none      &trans       &trans  &trans          &trans
             >;
         };
 
@@ -142,10 +128,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET       &none         &none         &none       &none          &none
-        &kp MINUS         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL               &kp C_MUTE    &kp RCTRL     &kp RSHFT   &kp RIGHT_ALT  &kp RGUI
-&trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT     &none     &kp PERIOD
-                                        &trans        &kp N0        &mo 3                   &trans        &none         &trans
+        &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET       &kp C_VOL_UP  &none      &none      &none          &none
+        &kp MINUS         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL               &kp C_VOL_DN  &kp RCTRL  &kp RSHFT  &kp RIGHT_ALT  &kp RGUI
+&trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH    &kp C_MUTE    &none      &trans     &trans         &trans    &trans
+                                        &trans        &kp N0        &mo 3                   &trans        &none      &trans
             >;
         };
 
@@ -177,10 +163,10 @@
 
         sd_layer {
             bindings = <
-                        &trans         &trans          &kp LC(UP_ARROW)  &kp LC(ENTER)    &trans    &trans  &trans  &trans  &trans  &trans
-                        &kp BACKSPACE  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans
-&kp LC(LG(LEFT_ARROW))  &trans         &trans          &trans            &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                       &trans            &trans           &trans    &trans  &trans  &trans
+                  &trans         &trans          &kp LC(UP_ARROW)  &trans           &trans           &trans  &trans  &trans  &trans  &trans
+                  &kp BACKSPACE  &kp LEFT_ARROW  &kp LC(DOWN)      &kp RIGHT_ARROW  &kp DEL          &trans  &trans  &trans  &trans  &trans
+&kp LC(LG(LEFT))  &trans         &trans          &trans            &trans           &kp LC(ENTER)    &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans            &trans           &trans           &trans  &trans  &trans
             >;
         };
 
